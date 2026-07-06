@@ -1,0 +1,143 @@
+/*global variables*/
+:root{
+
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+--regular: 400;
+--semiBold: 600;
+--bold: 700;
+
+}
+
+/*fonts */
+@font-face {
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/static/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+/*styles*/
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Stone-100);
+    margin: 0;
+    padding: 40px 16px;
+    font-size: 16px;
+    color: var(--Stone-600);
+}
+
+.card{
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    background-color: var(--White);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;  
+    border-radius: 12px;  
+    gap: 40px;
+    }
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.text-content{
+    width: 100%;
+    
+}
+.border{
+    border-bottom: solid var(--Stone-150) 1px;
+}
+
+li{
+    line-height: 2;
+
+}
+li::marker{
+    color: var(--Brown-800);
+}
+
+.bold{
+    font-weight: bold;
+}
+h1{
+    color: var(--Stone-900)
+}
+h3, td:nth-child(2){
+    color: var(--Brown-800);
+    font-weight: var(--bold);
+}
+
+h5{
+    color: var(--Rose-800);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    padding: 12px 32px;
+}
+
+tr{
+    border-bottom: solid var(--Stone-150) 1px;
+}
+
+.Preparation{
+    background-color: var(--Rose-50);
+    padding: 32px;
+    border-radius: 12px;
+}
+
+/*media querys*/
+/*mobile*/
+@media (max-width: 768px){
+    body {
+        padding: 0;
+    }
+    .card{
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
+    .text-content{
+        width: 100%;
+    }
+    td{
+        padding: 12px 16px;
+    }
+}
+
+/* tablet*/
+
+@media(max-width)
